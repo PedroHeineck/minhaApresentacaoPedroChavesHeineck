@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+  color: var(--cor-secundaria);
+}
+
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
+}
+
+.tituloDestaque {
+  color: var(--cor-terciaria);
+}
+
+.linguagensDestaque {
+  color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.apresentacao__botoes__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.apresentacao__botoes__link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  color: var(--cor-secundaria);
+  width: 50%;
+  text-align: center;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--fonte-secundaria);
+  padding: 21.5px 0;
+  text-decoration: none;
+}
+
+.apresentacao__botoes__link:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+
+.apresentacao__imagem {
+  width: 42%;
+}
+
+.rodape {
+  background-color: var(--cor-terciaria);
+  text-align: center;
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  padding: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form__conteudo {
+  max-width: 600px;
+  text-align: center;
+}
+
+.form__conteudo__titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--cor-terciaria);
+}
+
+.form__conteudo__formulario {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form__conteudo label,
+.form__conteudo textarea,
+.form__conteudo input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.form__conteudo textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form__conteudo button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form__conteudo button:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.portfolio {
+  padding: 50px 20px;
+}
+
+.portfolio__conteudo__titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.portfolio__trabalho {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  padding: 20px;
+  border-radius: 10px;
+  border-color: var(--cor-terciaria);
+  border-style: groove;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__trabalho__titulo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+.portfolio__trabalho__descricao {
+  font-size: 1.2rem;
+  color: var(--cor-terciaria);
+  margin-top: 10px;
+}
+
+.imagem {
+  border-radius: 10px;
+  height: 15em;
+  width: auto;
+}
